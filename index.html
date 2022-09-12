@@ -52,6 +52,19 @@
                 <h2>🖥 平台</h2>
                 <inline-images :list="useCodeList.slice(20, 22)"></inline-images>
 
+                <h2>📺️ 番剧</h2>
+                <div class="bangumi" v-if="bangumi.length > 0">
+                    <a target="_blank" v-for="(item, idx) in bangumi" v-bind:key="idx" :href="item.url">
+                        <div class="bangumi-item">
+                            <div class="bangumi-cover">
+                                <img referrerpolicy="no-referrer" :src="item.cover" :alt="item.title">
+                            </div>
+                            <p class="bangumi-title">{{ item.title }}</p>
+                        </div>
+                    </a>
+                </div>
+                <p v-else>似乎没有呢 ^-^</p>
+
                 <h2>☎️ 联系我</h2>
                 <ul>
                     <li>Email：<a href="mailto://xiaomo@truimo.com">xiaomo@truimo.com</a></li>
