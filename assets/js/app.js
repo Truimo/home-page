@@ -106,9 +106,6 @@ new Vue({
                     })
                 }
             }
-            console.log(response, that.bangumi);
-        }).catch(function (error) {
-            console.log(error);
         })
         console.log('323')
     }
