@@ -3,6 +3,11 @@ Vue.component('inline-images', {
     template: '<p><span v-for="(item, idx) in list" v-bind:key="idx"><img :src="item.url" :alt="item.name">&ensp;</span></p>'
 })
 
+Vue.component('links', {
+    props: ['links'],
+    template: '<ul class="list"><li v-for="(link, idx) in links" v-bind:key="idx"><a target="_blank" :href="link.url">{{ link.name }}</a></li></ul>'
+})
+
 new Vue({
     el: '#app',
     data: {

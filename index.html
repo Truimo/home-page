@@ -8,6 +8,7 @@
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
+<script type="text/javascript" src="assets/vue/vue.min.js"></script>
 
 <div class="page" id="app">
     <div class="page_inner">
@@ -25,10 +26,7 @@
                     </div>
                 </div>
                 <div class="user-other">
-                    <ul class="list">
-                        <li v-for="(link, idx) in links" v-bind:key="idx"><a target="_blank"
-                                                                             :href="link.url">{{ link.name }}</a></li>
-                    </ul>
+                    <links :links="links"></links>
                 </div>
             </div>
             <div class="readme">
@@ -68,7 +66,6 @@
     </div>
 </div>
 
-<script type="text/javascript" src="assets/vue/vue.min.js"></script>
 <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 </html>
