@@ -47,6 +47,8 @@ img {
 }
 
 .page_inner {
+    position: relative;
+    z-index: 0;
     border-radius: 12px 12px 0 0;
     overflow: hidden;
     background-color: #fff;
@@ -216,10 +218,18 @@ img {
 
     .page_inner {
         border-radius: 0;
+        overflow: unset;
     }
 
     .page .banner {
         height: 260px;
+        position: sticky;
+        top: 0;
+        z-index: -1;
+    }
+
+    .content {
+        background-color: inherit;
     }
 }
 
