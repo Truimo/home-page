@@ -1,7 +1,7 @@
 function Index() {
     return (
         <div className='view'>
-            movie
+            movie view
         </div>
     )
 }

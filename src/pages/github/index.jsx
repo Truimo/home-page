@@ -1,7 +1,7 @@
 function Index() {
     return (
         <div className='view'>
-            github
+            github view
         </div>
     )
 }
