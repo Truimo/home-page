@@ -57,6 +57,7 @@ function Index() {
                     </div>
                 </div>
             </div>
+            <div className='hr'></div>
         </header>
     )
 }
