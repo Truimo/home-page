@@ -1,0 +1,87 @@
+.header {
+    border-radius: 12px 12px 0 0;
+    height: 132px;
+    padding: 0 26px;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.header-user {
+    display: flex;
+    align-items: center;
+}
+
+.header-user .user-avatar {
+    width: 69px;
+    height: 69px;
+    border-radius: 8px;
+}
+
+.header-user .user-info {
+    margin-left: 16px;
+}
+
+.header-user .user-info .name {
+    margin: .5625em 0;
+    font-size: 18px;
+}
+
+.header-user .user-info .desc {
+    margin: .125em 0;
+    font-size: 14px;
+    color: #262626;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav .nav-item {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    margin: 0 6px;
+    transition: background-color ease 180ms, width ease 240ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.header-nav .nav-item:first-child {
+    margin: 0 6px 0 0;
+}
+
+.header-nav .nav-item:last-child {
+    margin: 0 0 0 6px;
+}
+
+.header-nav .nav-item:hover {
+    background-color: #eef4f9;
+    width: 120px;
+}
+
+.header-nav .nav-item:active,
+.header-nav .nav-item.active {
+    background-color: #d0e0ef;
+}
+
+.header-nav .nav-item i.iconfont {
+    font-size: 20px;
+}
+
+.header-nav .nav-item .title {
+    width: 0;
+    overflow: hidden;
+}
+
+.header-nav .nav-item:hover .title {
+    width: auto;
+}

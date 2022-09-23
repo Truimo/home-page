@@ -1,0 +1,92 @@
+@import "https://at.alicdn.com/t/c/font_3667414_lpgczxoi2te.css";
+
+body {
+    font-family: system-ui, -apple-system, fangsong, "PingFang SC", miui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, emoji, segoe ui symbol;
+    height: 100%;
+    overflow: auto;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    color: #121212;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container::before {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background-image: linear-gradient(128deg, #e7f1ff, #f3efff);
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 90px auto 0;
+}
+
+.container_inner {
+    position: relative;
+    box-shadow: 0 7px 20px 1px #d7ceff30;
+    transition: background-color ease 120ms;
+}
+
+.header, .main, .footer {
+    background-color: #ffffff;
+}
+
+.main {
+    min-height: 600px;
+}
+
+.avatar {
+    overflow: hidden;
+}
+
+.avatar img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.hr {
+    height: 1px;
+    width: 100%;
+    background-image: linear-gradient(90deg, #BCD3E8 50%, transparent 50%, transparent 1px);
+    background-size: 12px 2px;
+    background-repeat: repeat-x;
+    background-position: center center;
+}
+
+.p {
+    padding: 24px 26px;
+}
+
+
+@media only screen and (max-width: 1440px) {
+
+}
+@media only screen and (max-width: 1920px) {
+
+}
+@media only screen and (max-width: 1366px) {
+
+}
+@media only screen and (max-width: 1200px) {
+
+}
+@media only screen and (max-width: 960px) {
+
+}
+@media only screen and (max-width: 540px) {
+
+}

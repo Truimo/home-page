@@ -1,0 +1,12 @@
+.footer {
+    font-size: 14px;
+    color: #898989;
+}
+
+.footer a:hover {
+    color: #121212;
+}
+
+.footer_inner {
+    padding: 12px 26px;
+}
