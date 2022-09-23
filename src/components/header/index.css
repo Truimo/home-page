@@ -85,3 +85,41 @@
 .header-nav .nav-item:hover .title {
     width: auto;
 }
+
+@media (prefers-color-scheme: dark) {
+    .header-user .user-avatar img {
+        filter: contrast(.82);
+    }
+    .header-user .user-info .desc {
+        color: #c9c9c9;
+    }
+    .header-nav .nav-item:hover {
+        background-color: #a9bed1;
+    }
+    .header-nav .nav-item:active,
+    .header-nav .nav-item.active {
+        background-color: #717f8b;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .header {
+        padding: 24px 26px 0;
+    }
+    .header_inner {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    .header-user .user-avatar {
+        width: 52px;
+        height: 52px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .header-nav {
+        max-width: 100%;
+    }
+}
+

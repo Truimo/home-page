@@ -1,12 +1,16 @@
 .footer {
     font-size: 14px;
-    color: #898989;
+    color: #d0d0d0;
 }
 
 .footer a:hover {
-    color: #121212;
+    color: #c4c4c4;
 }
 
 .footer_inner {
     padding: 12px 26px;
+}
+
+@media (prefers-color-scheme: dark) {
+
 }

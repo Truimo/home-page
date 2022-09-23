@@ -2,7 +2,7 @@ import './index.css';
 
 function Index() {
     return (
-        <div>
+        <div className='view'>
             home
         </div>
     )

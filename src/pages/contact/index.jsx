@@ -1,6 +1,6 @@
 function Index() {
     return (
-        <div>
+        <div className='view'>
             contact
         </div>
     )
