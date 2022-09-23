@@ -1,10 +1,10 @@
 .footer {
     font-size: 14px;
-    color: #d0d0d0;
+    color: #898989;
 }
 
 .footer a:hover {
-    color: #c4c4c4;
+    color: #121212;
 }
 
 .footer_inner {
@@ -12,5 +12,11 @@
 }
 
 @media (prefers-color-scheme: dark) {
+    .footer {
+        color: #d0d0d0;
+    }
 
+    .footer a:hover {
+        color: #c4c4c4;
+    }
 }
