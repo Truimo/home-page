@@ -5,11 +5,13 @@
 .blog-card h2 {
     margin: 0 0 10px;
     font-weight: 400;
+    overflow-wrap: break-word;
 }
 
 .blog-card p {
     margin: 0 0 10px;
     font-weight: 400;
+    overflow-wrap: break-word;
 }
 
 .blog-card p:last-child {
