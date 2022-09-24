@@ -90,9 +90,6 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    .header-user .user-avatar img {
-        filter: contrast(.82);
-    }
     .header-user .user-info .desc {
         color: #c9c9c9;
     }

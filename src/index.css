@@ -18,6 +18,11 @@ a:hover {
     text-decoration: underline;
 }
 
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
 .container::before {
     position: fixed;
     z-index: -1;
@@ -118,6 +123,9 @@ a:hover {
 @media (prefers-color-scheme: dark) {
     body {
         color: #f3f3f3;
+    }
+    img {
+        filter: contrast(.82);
     }
     .hr {
         background-image: linear-gradient(90deg, #adb5bf 50%, transparent 50%, transparent 1px);
