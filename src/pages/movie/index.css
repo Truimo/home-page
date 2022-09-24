@@ -10,6 +10,11 @@
     overflow: hidden;
 }
 
+.movie-card .movie-cover img {
+    width: 100%;
+    object-fit: cover;
+}
+
 .movie-card .movie-title {
     font-size: 14px;
     margin: .5em 0;

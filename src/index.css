@@ -18,11 +18,6 @@ a:hover {
     text-decoration: underline;
 }
 
-img {
-    width: 100%;
-    object-fit: cover;
-}
-
 .container::before {
     position: fixed;
     z-index: -1;
