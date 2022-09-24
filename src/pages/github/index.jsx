@@ -9,7 +9,7 @@ function Index() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        request.get('https://api.github.com/users/Truimo/repos?sort=pushed').then(res => {
+        request.get('https://proxy.catci.cn/github/repos').then(res => {
             if (res.status === 200 && Array.isArray(res.data)) {
                 setLoading(false);
                 const data = res.data.map(item => {

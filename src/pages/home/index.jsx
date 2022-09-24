@@ -9,7 +9,7 @@ function Index() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        request.get('https://raw.githubusercontent.com/Truimo/Truimo/main/README.md')
+        request.get('https://proxy.catci.cn/github/readme')
             .then(res => {
                 if (res.status === 200) {
                     setLoading(false)
