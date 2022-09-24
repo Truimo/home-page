@@ -1,0 +1,87 @@
+.github-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.github-group a:hover {
+    text-decoration: none;
+}
+
+.github-card {
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 14px;
+    border-radius: 12px;
+    transition: background-color ease 180ms;
+}
+
+.github-card:hover {
+    background-color: #D9F3FE;
+    box-shadow: rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0.1) 0 4px 6px -1px, rgba(0, 0, 0, 0.1) 0 2px 4px -2px;
+}
+
+.github-card:active {
+    background-color: #c3dbe5;
+}
+
+.github-card .tags {
+    margin-bottom: 10px;
+}
+
+.github-card .tags .tag {
+    display: inline-block;
+    background-color: #7EB3C7;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 6px 8px;
+    border-radius: 6px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.github-card .tags .tag.forked {
+    background-color: #C4B1C6;
+}
+
+.github-card .tags .tag.archived {
+    background-color: #A8B2CF;
+}
+
+.github-card .starNum {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .github-card:hover {
+        background-color: #6a777c;
+        box-shadow: rgba(255, 255, 255, 0) 0 0 0 0, rgba(255, 255, 255, 0) 0 0 0 0, rgba(255, 255, 255, 0.1) 0 4px 6px -1px, rgba(255, 255, 255, 0.1) 0 2px 4px -2px;
+    }
+    .github-card:active {
+        background-color: #606b70;
+    }
+    .github-card .tags .tag {
+        background-color: #3e5862;
+        color: #e6e6e6;
+    }
+    .github-card .tags .tag.archived {
+        background-color: #525765;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .github-group {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .github-group {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
