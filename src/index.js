@@ -11,6 +11,7 @@ import Blog from "./pages/blog";
 import Movie from "./pages/movie";
 
 import 'normalize.css';
+import './iconfont.css';
 import './index.css';
 
 const router = createBrowserRouter([{
