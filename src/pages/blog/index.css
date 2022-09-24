@@ -1,0 +1,17 @@
+.blog-card {
+    padding-bottom: 18px;
+}
+
+.blog-card h2 {
+    margin: 0 0 10px;
+    font-weight: 400;
+}
+
+.blog-card p {
+    margin: 0 0 10px;
+    font-weight: 400;
+}
+
+.blog-card p:last-child {
+    font-size: 14px;
+}

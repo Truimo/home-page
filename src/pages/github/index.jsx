@@ -1,8 +1,8 @@
 import {useEffect, useState} from "react";
 import request from "../../request";
+import Loading from "../../components/loading";
 
 import './index.css';
-import Loading from "../../components/loading";
 
 function Index() {
     const [github, setGithub] = useState([]);
