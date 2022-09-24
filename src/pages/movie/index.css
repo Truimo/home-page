@@ -1,0 +1,27 @@
+.movie-group {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.movie-card .movie-cover {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.movie-card .movie-title {
+    font-size: 14px;
+    margin: .5em 0;
+}
+
+@media only screen and (max-width: 960px) {
+    .movie-group {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media only screen and (max-width: 540px) {
+    .movie-group {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
