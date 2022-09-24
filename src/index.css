@@ -1,4 +1,4 @@
-@import "https://at.alicdn.com/t/c/font_3667414_lpgczxoi2te.css";
+@import url("https://at.alicdn.com/t/c/font_3667414_8f77n4nnxju.css");
 
 body {
     font-family: system-ui, -apple-system, fangsong, "PingFang SC", miui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, emoji, segoe ui symbol;
@@ -68,7 +68,51 @@ a:hover {
 }
 
 .view {
+    min-height: inherit;
     padding: 24px 26px;
+    position: relative;
+}
+
+.view .loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading .loading_inner {
+    display: flex;
+    align-items: center;
+}
+
+.loading .loading-icon {
+    flex-shrink: 0;
+    animation: spin 1s linear infinite;
+}
+
+.loading.hide {
+    display: none;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loading .loading-icon i.iconfont {
+    font-size: 29px;
+}
+
+.loading .loading-tip {
+    font-size: 20px;
 }
 
 @media (prefers-color-scheme: dark) {
