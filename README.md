@@ -6,11 +6,26 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+### Development
 
 Runs the app in the development mode.
 
+```shell
+npm start
+```
 
-### `npm run build`
+### Production
 
-Builds the app for production
+Builds the app for production.
+
+```shell
+npm run build
+```
+
+## Nginx pseudo static configuration
+
+```
+location / {
+  try_files $uri $uri/ /index.html;
+}
+```
