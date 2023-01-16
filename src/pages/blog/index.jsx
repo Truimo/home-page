@@ -10,7 +10,7 @@ function Index() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        request.get('https://proxy.catci.cn/blog/rss')
+        request.get('https://proxy.20mo.cn/blog/rss')
             .then(res => {
                 if (res.status === 200 && typeof res.data === 'string') {
                     setLoading(false);

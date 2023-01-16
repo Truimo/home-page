@@ -20,7 +20,7 @@ function Index() {
                         <img src="https://shp.qpic.cn/collector/3201719830/d42559f0-d6e5-4e8b-92be-fe134875463d/0" alt="avatar" />
                     </div>
                     <div className='user-info'>
-                        <h4 className='name'>Min.</h4>
+                        <h4 className='name'>Sky.</h4>
                         <p className='desc'>夕焼け空は赤い 炎のように赤い</p>
                     </div>
                 </div>

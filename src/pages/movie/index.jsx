@@ -9,21 +9,45 @@ function Index() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        request.get('https://proxy.catci.cn/bili/x/space/bangumi/follow/list?type=1&pn=1&ps=15&vmid=351904757')
-            .then(res => {
-                console.log(Array.isArray(res.data))
-                if (res.status === 200 && typeof res.data === 'object') {
-                    setLoading(false);
-                    const data = res.data.data.list.map(item => {
-                        return {
-                            title: item.title,
-                            url: item.short_url,
-                            cover: item.cover.replace('http', 'https')
-                        }
-                    });
-                    setList(oldArr => [...oldArr, ...data]);
+        let timer = null, canLoad = false, page = 1
+        const load = (pn) => {
+            canLoad = false
+            request.get(`https://proxy.20mo.cn/bili/x/space/bangumi/follow/list?type=1&pn=${pn}&ps=15&vmid=351904757`)
+                .then(res => {
+                    if (res.status === 200 && typeof res.data === 'object') {
+                        page === 1 && setLoading(false)
+                        canLoad = res.data.data.list.length > 0
+                        page = page + 1
+                        const data = res.data.data.list.map(item => {
+                            return {
+                                title: item.title,
+                                url: item.short_url,
+                                cover: item.cover.replace('http', 'https')
+                            }
+                        })
+                        setList(oldArr => [...oldArr, ...data])
+                    }
+                })
+        }
+        const handleScroll = (ev) => {
+            if (timer > 0 || false === canLoad) {
+                return
+            }
+            timer = setTimeout(() => {
+                const scrollTop = ev.target.documentElement.scrollTop || 0
+                const clientHeight = ev.target.documentElement.clientHeight || 0
+                const scrollHeight = ev.target.documentElement.scrollHeight || 0
+                if (scrollHeight - scrollTop - clientHeight < 280) {
+                    load(page)
                 }
-            })
+                timer = null
+            }, 1000)
+        }
+        load(page)
+        window.addEventListener('scroll', handleScroll, false)
+        return () => {
+            window.removeEventListener('scroll', handleScroll, false)
+        }
     }, [])
 
     return (
